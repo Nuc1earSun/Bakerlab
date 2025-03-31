@@ -1,0 +1,26 @@
+@import "utils/colors.scss";
+@import "utils/mixins.scss";
+@import "utils/fonts.scss";
+
+@import "styles/header.scss";
+@import "styles/main-page.scss";
+
+body {
+  @extend .inter-400;
+  font-size: 16px;
+  line-height: 150%;
+  color: $text-color;
+
+  background: $background-color;
+}
+
+.container {
+  padding-inline: 16px;
+  margin-inline: auto;
+  max-width: 1232px;
+
+  @include on768 {
+    padding-inline: 44px;
+    max-width: 1288px;
+  }
+}

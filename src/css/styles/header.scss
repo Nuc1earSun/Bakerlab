@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+
+  @include on768 {
+    padding: 20px;
+  }
+  @include on1200 {
+    padding: 32px;
+  }
+}
+
+.header__menu {
+  @include on1200 {
+    display: none;
+  }
+}
+
+.header__menu-desktop {
+  display: none;
+  @include on1200 {
+    display: flex;
+    gap: 64px;
+    align-items: center;
+  }
+}
+
+.header__menu-link--accent {
+  color: $accent-color;
+}
+
+.header__menu-wrapper {
+  display: flex;
+  gap: 7px;
+}
