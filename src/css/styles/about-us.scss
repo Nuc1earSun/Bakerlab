@@ -1,0 +1,81 @@
+.about-us {
+  position: relative;
+  margin-top: 72px;
+
+  @include on768 {
+    margin-top: 152px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  @include on1200 {
+    margin-top: 178px;
+  }
+}
+.about-us__title {
+  font-size: 48px;
+  line-height: 85%;
+  letter-spacing: -0.03em;
+  color: $accent-color;
+  text-transform: uppercase;
+  @include on768 {
+    width: 48%;
+    font-size: 56px;
+  }
+  @include on1200 {
+    font-size: 72px;
+  }
+}
+.about-us__subtitle {
+  margin-top: 32px;
+  @include on768 {
+    width: 48%;
+    margin-top: 0;
+  }
+}
+.about-us__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+  margin-top: 64px;
+
+  @include on768 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 72px;
+    margin-bottom: 152px;
+  }
+  @include on1200 {
+    margin-top: 144px;
+    margin-bottom: 350px;
+  }
+}
+.about-us__value-wrapper {
+  @include on768 {
+    width: 49%;
+  }
+  @include on1200 {
+    width: 24%;
+  }
+}
+.about-us__value {
+  font-size: 96px;
+  color: $accent-color;
+  line-height: 1;
+}
+.about-us__image {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  @include on768 {
+    top: 9%;
+    left: 9%;
+    width: 70%;
+    height: 80%;
+  }
+}

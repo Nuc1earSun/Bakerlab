@@ -2,6 +2,7 @@
   "name": "bakerlab",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "sass --watch src/css/main.scss:src/css/style.css"
   },
