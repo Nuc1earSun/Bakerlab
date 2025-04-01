@@ -7,10 +7,28 @@ const clientsCountUp = new CountUp("clients", 0, 10, 0, 2, {
   suffix: "K+",
 });
 
-yearCountUp.start();
-storesCountUp.start();
-companiesCountUp.start();
-clientsCountUp.start();
+const target = document.getElementById("results");
+
+const results = [yearCountUp, storesCountUp, companiesCountUp, clientsCountUp];
+const options = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0,
+};
+
+const callback = (entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      results.forEach((item) => {
+        item.start();
+      });
+    }
+  });
+};
+
+const observer = new IntersectionObserver(callback, options);
+
+observer.observe(target);
 
 const menuIcon = document.getElementById("menuIcon");
 const menu = document.getElementById("menu");
@@ -37,4 +55,4 @@ for (let i = 0; i < links.length; i++) {
     menu.classList.remove("active");
     menuIcon.src = "./assets/icons/burger-menu.svg";
   });
-} 
+}

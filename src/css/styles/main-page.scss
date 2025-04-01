@@ -64,6 +64,8 @@
   border-radius: 32px;
   gap: 8px;
 
+  @include hover(1.05);
+
   @include on768 {
     margin-top: 210px;
     max-width: 326px;

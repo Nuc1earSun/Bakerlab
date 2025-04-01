@@ -25,7 +25,9 @@
     align-items: center;
   }
 }
-
+.header__menu-link {
+  @include hover;
+}
 .header__menu-link--accent {
   color: $accent-color;
 }
@@ -33,4 +35,5 @@
 .header__menu-wrapper {
   display: flex;
   gap: 7px;
+  @include hover;
 }

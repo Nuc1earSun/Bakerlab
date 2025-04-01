@@ -19,6 +19,9 @@
   transform: translate(-50%, -50%);
   gap: 24px;
 }
+.menu-link {
+  @include hover;
+}
 .menu-link--accent {
   @extend .header__menu-link--accent;
 }

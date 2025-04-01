@@ -19,6 +19,8 @@
 }
 .products__card {
   margin-top: 40px;
+  @include hover(1.05);
+
   @include on768 {
     margin-top: 80px;
   }
