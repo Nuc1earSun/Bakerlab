@@ -573,6 +573,11 @@
   }
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 16px;
   line-height: 150%;
@@ -591,6 +596,11 @@ body {
     padding-inline: 44px;
     max-width: 1288px;
   }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
