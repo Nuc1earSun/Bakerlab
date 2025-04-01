@@ -9,26 +9,49 @@
     font-size: 56px;
     margin-top: 228px;
   }
+  @include on1200 {
+    font-size: 72px;
+    margin-top: 316px;
+  }
 }
 .products__subtitle {
   margin-top: 24px;
 }
 .products__card {
   margin-top: 40px;
+  @include on768 {
+    margin-top: 80px;
+  }
+  @include on1200 {
+    margin-top: 76px;
+  }
 }
 .products__card:nth-child(1) {
   margin-top: 56px;
+  @include on768 {
+    margin-top: 80px;
+  }
+  @include on1200 {
+    margin-top: 76px;
+  }
 }
 .products__image {
   border-radius: 8px;
   height: 70%;
   width: 100%;
+
+  @include on768 {
+    height: 75%;
+  }
+  @include on1200 {
+    height: 77%;
+  }
 }
 
 .products__card-title {
   @extend .inter-500;
   color: $secondary-color;
-  margin-top: 16px;
+  margin-top: 15px;
 }
 .products__card-description {
   margin-top: 4px;

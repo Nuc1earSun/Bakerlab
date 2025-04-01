@@ -11,3 +11,18 @@ yearCountUp.start();
 storesCountUp.start();
 companiesCountUp.start();
 clientsCountUp.start();
+
+const menuIcon = document.getElementById("menuIcon");
+const menu = document.getElementById("menu");
+
+const handleClick = () => {
+  if (menu.classList.contains("active")) {
+    menu.classList.remove("active");
+    document.body.classList.remove("overflow-hidden");
+  } else {
+    menu.classList.add("active");
+    document.body.classList.add("overflow-hidden");
+  }
+}
+
+menuIcon.addEventListener("click", handleClick);

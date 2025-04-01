@@ -1,0 +1,31 @@
+.menu {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $background-color;
+  z-index: 999;
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
+.menu__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 24px;
+}
+.menu-link--accent {
+  @extend .header__menu-link--accent;
+}
+
+.active {
+  transform: translateX(0);
+}
+.overflow-hidden {
+  overflow: hidden;
+}

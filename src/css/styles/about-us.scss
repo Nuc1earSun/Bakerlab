@@ -4,14 +4,15 @@
   margin-bottom: 69px;
 
   @include on768 {
-    margin-top: 152px;
+    margin-top: 150px;
+    margin-bottom: 0px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 24px;
   }
   @include on1200 {
-    margin-top: 178px;
+    margin-top: 164px;
   }
 }
 .about-us__title {
@@ -35,6 +36,9 @@
     width: 48%;
     margin-top: 0;
   }
+  @include on1200 {
+    transform: translateX(10px);
+  }
 }
 .about-us__container {
   display: flex;
@@ -46,11 +50,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    margin-top: 72px;
+    margin-top: 40px;
     margin-bottom: 152px;
+    row-gap: 74px;
   }
   @include on1200 {
-    margin-top: 144px;
+    margin-top: 90px;
     margin-bottom: 350px;
   }
 }

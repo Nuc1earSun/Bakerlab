@@ -20,6 +20,7 @@
         src="./assets/icons/burger-menu.svg"
         alt="Menu"
         class="header__menu"
+        id="menuIcon"
       />
 
       <nav class="header__menu-desktop">
@@ -33,10 +34,18 @@
       </nav>
     </header>
 
-    <aside class="menu">
-
+    <aside class="menu container" id="menu">
+      <nav class="menu__nav">
+        <a class="menu-link">Products</a>
+        <a class="menu-link">About Us</a>
+        <a class="menu-link">Blog</a>
+        <div class="menu-wrapper">
+          <img src="./assets/icons/phone.svg" alt="" />
+          <a class="menu-link--accent">CONTACT US</a>
+        </div>
+      </nav>
     </aside>
-    
+
     <main class="container main">
       <p class="main__subtitle">
         We bake your fantasies — croissants,
@@ -192,9 +201,13 @@
 
     <footer class="footer">
       <div class="container footer__container">
-        <img src="./assets/icons/logo-footer.svg" alt="Bakerlab Logo" class="footer__logo" />
+        <img
+          src="./assets/icons/logo-footer.svg"
+          alt="Bakerlab Logo"
+          class="footer__logo"
+        />
 
-        <nav>
+        <nav id="footerMenu">
           <h5 class="footer__menu-title">MENU</h5>
           <ul>
             <li><a href="#">Products</a></li>
@@ -206,23 +219,27 @@
 
         <h2 class="footer__contact-us">Contact us</h2>
 
-        <h5 class="footer__menu-title--call-us">CALL US</h5>
-        <ul>
-          <li><a href="tel:(629) 555-0129" type="tel">(629) 555-0129</a></li>
-          <li><a href="tel:(603) 555-0123" type="tel">(603) 555-0123</a></li>
-          <li><a href="tel:(704) 555-0127" type="tel">(704) 555-0127</a></li>
-        </ul>
+        <div id="callUs">
+          <h5 class="footer__menu-title--call-us" id="call-us">CALL US</h5>
+          <ul>
+            <li><a href="tel:(629) 555-0129" type="tel">(629) 555-0129</a></li>
+            <li><a href="tel:(603) 555-0123" type="tel">(603) 555-0123</a></li>
+            <li><a href="tel:(704) 555-0127" type="tel">(704) 555-0127</a></li>
+          </ul>
+        </div>
 
-        <h5 class="footer__menu-title--email">EMAIL US</h5>
-        <ul>
-          <li>
-            <a href="mailto:bakerlab@example.com" type="email"
-              >bakerlab@example.com</a
-            >
-          </li>
-        </ul>
+        <div id="email">
+          <h5 class="footer__menu-title--email">EMAIL US</h5>
+          <ul>
+            <li>
+              <a href="mailto:bakerlab@example.com" type="email"
+                >bakerlab@example.com</a
+              >
+            </li>
+          </ul>
+        </div>
 
-        <div class="footer__social-media">
+        <div class="footer__social-media" id="social">
           <div class="footer__social-media-icon">
             <img src="./assets/icons/facebook.svg" alt="" />
           </div>
