@@ -1,6 +1,7 @@
 .about-us {
   position: relative;
-  margin-top: 72px;
+  margin-top: 60px;
+  margin-bottom: 69px;
 
   @include on768 {
     margin-top: 152px;
@@ -29,6 +30,7 @@
 }
 .about-us__subtitle {
   margin-top: 32px;
+  letter-spacing: -0.005em;
   @include on768 {
     width: 48%;
     margin-top: 0;
@@ -37,8 +39,8 @@
 .about-us__container {
   display: flex;
   flex-direction: column;
-  row-gap: 48px;
-  margin-top: 64px;
+  row-gap: 43px;
+  margin-top: 57px;
 
   @include on768 {
     flex-direction: row;

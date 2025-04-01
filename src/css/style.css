@@ -5,7 +5,7 @@
   font-style: normal;
 }
 
-.inter-500, .footer__menu-title, .products__card-button, .products__card-title, .main__link-learn-more {
+.inter-500, .footer__menu-title, .footer__menu-title--email, .footer__menu-title--call-us, .products__card-button, .products__card-title, .main__link-learn-more {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -15,7 +15,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 16px;
+  padding: 20px;
 }
 @media (min-width: 768px) {
   .header {
@@ -57,6 +57,7 @@
 .main__subtitle {
   margin-top: 32px;
   text-align: center;
+  letter-spacing: -0.01em;
 }
 @media (min-width: 768px) {
   .main__subtitle {
@@ -77,6 +78,7 @@
   text-align: center;
   text-transform: uppercase;
   color: #F9512E;
+  letter-spacing: -0.03em;
 }
 @media (min-width: 768px) {
   .main__title {
@@ -152,6 +154,7 @@
   font-size: 48px;
   line-height: 85%;
   color: #F9512E;
+  letter-spacing: -0.03em;
 }
 @media (min-width: 768px) {
   .products__title {
@@ -164,9 +167,18 @@
   margin-top: 24px;
 }
 
-.products__image {
+.products__card {
+  margin-top: 40px;
+}
+
+.products__card:nth-child(1) {
   margin-top: 56px;
+}
+
+.products__image {
   border-radius: 8px;
+  height: 70%;
+  width: 100%;
 }
 
 .products__card-title {
@@ -175,7 +187,8 @@
 }
 
 .products__card-description {
-  margin-top: 8px;
+  margin-top: 4px;
+  letter-spacing: -0.005em;
 }
 
 .products__card-button {
@@ -184,7 +197,8 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 8px;
+  padding: 4px;
+  margin-top: 16px;
 }
 
 .products__grid {
@@ -225,7 +239,8 @@
 }
 .about-us {
   position: relative;
-  margin-top: 72px;
+  margin-top: 60px;
+  margin-bottom: 69px;
 }
 @media (min-width: 768px) {
   .about-us {
@@ -263,6 +278,7 @@
 
 .about-us__subtitle {
   margin-top: 32px;
+  letter-spacing: -0.005em;
 }
 @media (min-width: 768px) {
   .about-us__subtitle {
@@ -274,8 +290,8 @@
 .about-us__container {
   display: flex;
   flex-direction: column;
-  row-gap: 48px;
-  margin-top: 64px;
+  row-gap: 43px;
+  margin-top: 57px;
 }
 @media (min-width: 768px) {
   .about-us__container {
@@ -331,19 +347,31 @@
 }
 
 .footer__container {
-  padding: 61px 0 0 0;
+  padding: 61px 0 56px 0;
 }
 
-.footer__menu-title {
+.footer__logo {
+  margin-left: 4px;
+}
+
+.footer__menu-title, .footer__menu-title--email, .footer__menu-title--call-us {
   color: #7f8096;
   margin-top: 40px;
+}
+
+.footer__menu-title--call-us {
+  margin-top: 34px;
+}
+
+.footer__menu-title--email {
+  margin-top: 35px;
 }
 
 .footer ul {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-top: 16px;
+  margin-top: 12px;
 }
 
 .footer ul li a {
@@ -355,9 +383,29 @@
 .footer__contact-us {
   font-size: 48px;
   color: #ffffff;
-  line-height: 1;
-  margin-top: 40px;
+  line-height: 0.9;
+  margin-top: 62px;
   text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.footer__social-media {
+  display: flex;
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.footer__social-media-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__copyright {
+  color: #7f8096;
+  margin-top: 40px;
 }
 
 body {

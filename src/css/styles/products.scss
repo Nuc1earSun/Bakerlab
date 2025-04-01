@@ -3,6 +3,7 @@
   font-size: 48px;
   line-height: 85%;
   color: $accent-color;
+  letter-spacing: -0.03em;
 
   @include on768 {
     font-size: 56px;
@@ -12,17 +13,26 @@
 .products__subtitle {
   margin-top: 24px;
 }
-.products__image {
-  margin-top: 56px;
-  border-radius: 8px;
+.products__card {
+  margin-top: 40px;
 }
+.products__card:nth-child(1) {
+  margin-top: 56px;
+}
+.products__image {
+  border-radius: 8px;
+  height: 70%;
+  width: 100%;
+}
+
 .products__card-title {
   @extend .inter-500;
   color: $secondary-color;
   margin-top: 16px;
 }
 .products__card-description {
-  margin-top: 8px;
+  margin-top: 4px;
+  letter-spacing: -0.005em;
 }
 .products__card-button {
   @extend .inter-500;
@@ -31,7 +41,8 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 8px;
+  padding: 4px;
+  margin-top: 16px;
 }
 .products__grid {
   display: grid;

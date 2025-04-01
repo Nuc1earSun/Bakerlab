@@ -2,18 +2,29 @@
   background: $footer-bg-color;
 }
 .footer__container {
-  padding: 61px 0 0 0;
+  padding: 61px 0 56px 0;
+}
+.footer__logo {
+  margin-left: 4px;
 }
 .footer__menu-title {
   @extend .inter-500;
   color: $secondary-color;
   margin-top: 40px;
 }
+.footer__menu-title--call-us {
+  @extend .footer__menu-title;
+  margin-top: 34px;
+}
+.footer__menu-title--email {
+  @extend .footer__menu-title;
+  margin-top: 35px;
+}
 .footer ul {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-top: 16px;
+  margin-top: 12px;
 }
 .footer ul li a{
   color: $white-color;
@@ -23,7 +34,24 @@
 .footer__contact-us {
   font-size: 48px;
   color: $white-color;
-  line-height: 1;
-  margin-top: 40px;
+  line-height: 0.9;
+  margin-top: 62px;
   text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+.footer__social-media {
+  display: flex;
+  gap: 32px;
+  margin-top: 40px;
+}
+.footer__social-media-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__copyright {
+  color: $secondary-color;
+  margin-top: 40px;
 }
